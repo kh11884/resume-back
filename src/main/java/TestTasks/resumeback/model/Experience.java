@@ -39,7 +39,7 @@ public class Experience {
         this.position = position;
     }
 
-    public String  isResponsibility() {
+    public String getResponsibility() {
         return responsibility;
     }
 
@@ -54,7 +54,7 @@ public class Experience {
                 ", date='" + date + '\'' +
                 ", place='" + place + '\'' +
                 ", position='" + position + '\'' +
-                ", responsibility=" + responsibility +
+                ", responsibility='" + responsibility + '\'' +
                 '}';
     }
 }

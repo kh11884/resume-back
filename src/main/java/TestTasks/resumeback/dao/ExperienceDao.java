@@ -21,25 +21,25 @@ public class ExperienceDao {
         experience1.setResponsibility("Старший смены. организация работы в смене: распределение текущей работы, контроль исполнения.");
 
         Experience experience2 = new Experience();
-        experience1.setId(getNewId());
-        experience1.setDate("Март 2008 — июль 2019");
-        experience1.setPlace("ООО \"С7 КАРГО\"");
-        experience1.setPosition("Специалист по таможенному оформлению");
-        experience1.setResponsibility("таможенное оформление товаров перемещаемых в рамках внешнеторговых контрактов.");
+        experience2.setId(getNewId());
+        experience2.setDate("Март 2008 — июль 2019");
+        experience2.setPlace("ООО \"С7 КАРГО\"");
+        experience2.setPosition("Специалист по таможенному оформлению");
+        experience2.setResponsibility("таможенное оформление товаров перемещаемых в рамках внешнеторговых контрактов.");
 
         Experience experience3 = new Experience();
-        experience1.setId(getNewId());
-        experience1.setDate("Июль 2019 — по настоящее время");
-        experience1.setPlace("ООО \"С7 КАРГО\"");
-        experience1.setPosition("Старший декларант");
-        experience1.setResponsibility("Старший смены. организация работы в смене: распределение текущей работы, контроль исполнения.");
+        experience3.setId(getNewId());
+        experience3.setDate("Апрель 2004 — март 2008");
+        experience3.setPlace("ОАО \"Авиакомпания \"Сибирь\"");
+        experience3.setPosition("Эксперт по грузовым перевозкам");
+        experience3.setResponsibility("Создание и поддержание агентской сети продаж грузовых авиаперевозок.");
 
         Experience experience4 = new Experience();
-        experience1.setId(getNewId());
-        experience1.setDate("Июль 2019 — по настоящее время");
-        experience1.setPlace("ООО \"С7 КАРГО\"");
-        experience1.setPosition("Старший декларант");
-        experience1.setResponsibility("Старший смены. организация работы в смене: распределение текущей работы, контроль исполнения.");
+        experience4.setId(getNewId());
+        experience4.setDate("Июнь 2002 — март 2004");
+        experience4.setPlace("ОАО \"Сибакадембанк\"");
+        experience4.setPosition("Специалист управления маркетинга и рекламы");
+        experience4.setResponsibility("Анализ рынка розничных банковских услуг. Разработка, внедрение и продвижение банковских продуктов и услуг. Формирование имиджа банка. Работа с подрядчиками по производству рекламы.");
 
         experiencesList.add(experience1);
         experiencesList.add(experience2);
@@ -51,7 +51,7 @@ public class ExperienceDao {
         return idSequence.addAndGet(1);
     }
 
-    public List<Experience> getExperiences(){
+    public List<Experience> getExperiences() {
         return experiencesList;
     }
 }
