@@ -1,7 +1,6 @@
 package TestTasks.resumeback.dao;
 
 import TestTasks.resumeback.model.Course;
-import TestTasks.resumeback.model.Experience;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
@@ -13,7 +12,7 @@ public class CourceDao {
     private List<Course> coursesList = new ArrayList<>();
     private AtomicInteger idSequence = new AtomicInteger(0);
 
-    public CourceDao(){
+    public CourceDao() {
         Course course1 = new Course();
         course1.setDate("январь - март 2020");
         course1.setUniversity("Academ IT School");
