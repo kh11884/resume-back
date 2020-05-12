@@ -1,5 +1,6 @@
 package TestTasks.resumeback.controller;
 
+import TestTasks.resumeback.model.Course;
 import TestTasks.resumeback.model.Experience;
 import TestTasks.resumeback.service.ResumeService;
 import org.slf4j.Logger;
@@ -21,11 +22,17 @@ public class ResumeController {
         this.resumeService = resumeService;
     }
 
-
     @RequestMapping(value = "getExperience", method = RequestMethod.GET)
     @ResponseBody
     public List<Experience> getExperiences() {
-        logger.info("getExperience");
+        logger.info("Called method getExperience");
         return resumeService.getExperiences();
+    }
+
+    @RequestMapping(value = "getCourses", method = RequestMethod.GET)
+    @ResponseBody
+    public List<Course> getCourses() {
+        logger.info("Called method  getCourses");
+        return resumeService.getCourses();
     }
 }
